@@ -1,0 +1,61 @@
+name: cars196_res50_sweep
+method: bayes
+metric:
+  goal: maximize
+  name: R@1
+parameters: 
+  alpha: 
+    values: [0.9, 0.95, 1.0, 1.1, 1.2]
+  batch-size:
+    values: [8, 16, 32]
+  tau:
+    values: [16, 20, 24, 28, 32]
+  ls:
+    values: [0.5, 0.8, 1.0, 1.2]
+  gpu-id:
+    value: 0
+  dataset:
+    value: 'cars'
+  model:
+    value: 'resnet50'
+  embedding-size:
+    value: 512
+  epochs:
+    value: 50
+  lr:
+    value: 1.0e-4
+  lr-ds:
+    value: 1.0e-1
+  lr-hgnn-factor:
+    value: 10
+  weight-decay:
+    value: 1.0e-4
+  lr-decay-step:
+    value: 10
+  workers:
+    value: 4
+  hgnn-hidden:
+    value: 512
+  add-gmp:
+    value: 1
+  epochs:
+    value: 60
+  optimizer:
+    value: 'adam'
+  lr-decay-gamma:
+    value: 0.5
+  IPC:
+    value: 0
+  warm:
+    value: 1
+  bn-freeze:
+    value: 1
+  layer-norm:
+    value: 1
+  remark:
+    value: ''
+  run-num:
+    value: 1
+  seed: 
+    value: 1
+program: train_wandb_sweep.py

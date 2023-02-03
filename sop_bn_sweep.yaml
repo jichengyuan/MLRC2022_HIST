@@ -1,0 +1,59 @@
+name: SOP_bn_sweep
+method: bayes
+metric:
+  goal: maximize
+  name: R@1
+parameters: 
+  alpha: 
+    values: [1.5, 1.55, 1.6, 1.65, 1.7, 1.75]
+  batch-size:
+    values: [8, 16, 32]
+  tau:
+    values: [12, 14, 16, 20, 22, 24]
+  ls:
+    values: [0.5, 0.8, 1.0, 1.2, 1.5]
+  gpu-id:
+    value: 1
+  dataset:
+    value: 'SOP'
+  model:
+    value: 'bn_inception'
+  embedding-size:
+    value: 512
+  lr:
+    value: 1.0e-4
+  lr-ds:
+    value: 1.0e-2
+  lr-hgnn-factor:
+    value: 10
+  weight-decay:
+    value: 1.0e-4
+  lr-decay-step:
+    value: 10
+  workers:
+    value: 4
+  hgnn-hidden:
+    value: 512
+  add-gmp:
+    value: 1
+  epochs:
+    value: 60
+  optimizer:
+    value: 'adamw'
+  lr-decay-gamma:
+    value: 0.5
+  IPC:
+    value: 0
+  warm:
+    value: 1
+  bn-freeze:
+    value: 0
+  layer-norm:
+    value: 1
+  remark:
+    value: ''
+  run-num:
+    value: 1
+  seed: 
+    value: 1
+program: train_wandb_sweep.py
