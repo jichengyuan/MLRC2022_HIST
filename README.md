@@ -69,8 +69,8 @@ pip install wandb
 
 1. Download four public benchmarks for deep metric learning
    - [CUB-200-2011](http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz)
-   - Cars-196 ([Img](http://imagenet.stanford.edu/internal/car196/car_ims.tgz), [Annotation](http://imagenet.stanford.edu/internal/car196/cars_annos.mat))
-   - Stanford Online Products ([Link](https://cvgl.stanford.edu/projects/lifted_struct/))
+   - [Cars-196](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
+   - [Stanford Online Products](https://cvgl.stanford.edu/projects/lifted_struct/)
 2. Extract the tgz or zip file into `./data/`
 
 
