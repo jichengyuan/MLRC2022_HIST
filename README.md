@@ -22,6 +22,8 @@ Our work aims to reproduce and  investigate the effectiveness and robustness of 
 |                                    | [RE]HIST                     | 70.1                                   | 89.8                               | 80.7                          |
 |                                    | [TUNE]HIST                   | **72.3**                      | **90.2**                  | 81.0                 |
 
+[OA], [RE], [TUNE] denote the results were the highest scores quoted from original paper, reproduced based on the reported configurations in original paper, reproduced by our best-searched settings by Bayesian optimization. The best results are marked in **bold**.
+
 ### Joint contribution of hyperparameters on CARS196 using ResNet‐50
 
 <table>
