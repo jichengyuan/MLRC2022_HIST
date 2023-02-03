@@ -24,9 +24,7 @@ Our work aims to reproduce and  investigate the effectiveness and robustness of 
 
 ### Joint contribution of hyperparameters on CARS196 using ResNet‐50
 
-<center class="half">
-    <img src=./imgs/embed_size_hgnn.png width="300"/><img src=./imgs/tau_lambda_s.png width="300"/>
-</center>
+<img src=./imgs/embed_size_hgnn.png width="425"/> <img src=./imgs/tau_lambda_s.png width="425"/> 
 
 ## Requirements
 
