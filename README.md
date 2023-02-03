@@ -22,6 +22,12 @@ Our work aims to reproduce and  investigate the effectiveness and robustness of 
 |                                    | [RE]HIST                     | 70.1                                   | 89.8                               | 80.7                          |
 |                                    | [TUNE]HIST                   | **72.3**                      | **90.2**                  | 81.0                 |
 
+### Joint contribution of hyperparameters on CARS196 using ResNet‐50
+
+<center class="half">
+    <img src=./imgs/embed_size_hgnn.png width="400"/><img src=./imgs/tau_lambda_s.png width="400"/>
+</center>
+
 ## Requirements
 
 - Python3
